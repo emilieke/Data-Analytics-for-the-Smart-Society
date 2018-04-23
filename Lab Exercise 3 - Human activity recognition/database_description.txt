@@ -1,0 +1,31 @@
+DATABASE DESCRIPTION - TRAINING
+------------------------------
+
+Data cell of size 8 x 2
+
+The first column of the cell contains the data.
+The second column contains the labels.
+
+DATA
+
+- Sampling frequency = 16Hz
+- 8 sequences of 5 x N, where N is the number of observations
+- First row correspond to axis Z transformed accelerometer data
+- Second row correspond to the module of the axis XY transformed accelerometer data
+- Last three rows correspond to the transformed gyroscope data (XYZ)
+
+LABELS
+
+- 8 sequences of 1 x N, with the same length as the data.
+- There are 5 different labels:
+	1 - Running
+	2 - Walking
+	3 - Standing
+	4 - Sitting
+	5 - Lying
+
+DATABASE DESCRIPTION - TEST
+------------------------------
+
+Data cell of size 2 x 1 with the data from the test sequences.
+- No labels are provided.
